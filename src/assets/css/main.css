@@ -71,3 +71,49 @@ body {
   padding: 8px 15px;
   margin-bottom: 4px;
 }
+
+/* Topbar Profile Dropdown */
+.topbar-dropdown {
+  position: absolute;
+  right: 0;
+  top: 50px;
+  width: 170px;
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 8px 0;
+  opacity: 0;
+  transform: translateY(-5px);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.topbar-dropdown.open {
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+
+.topbar-dropdown-item {
+  padding: 10px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.topbar-dropdown-item:hover {
+  background-color: #f1f3f5;
+}
+
+.topbar-profile {
+  cursor: pointer;
+}
+
+.topbar-profile img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+}

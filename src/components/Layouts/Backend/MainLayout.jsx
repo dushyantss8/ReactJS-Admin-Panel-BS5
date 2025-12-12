@@ -12,7 +12,7 @@ const MainLayout = () => {
       <TopBar />
 
       {/* Main Content */}
-      <div style={{ marginLeft: "250px", marginTop: "60px", padding: "20px" }}>
+      <div style={{ marginLeft: "240px", marginTop: "60px", padding: "20px" }}>
         <Outlet />
       </div>
     </div>

@@ -17,6 +17,8 @@ body {
   font-size: 15px;
   border-radius: 4px;
   text-decoration: none;
+  margin-bottom: 6px;
+  /* ← Add spacing between items */
 }
 
 .sidebar-link:hover {
@@ -46,4 +48,26 @@ body {
   width: 34px;
   height: 34px;
   border-radius: 50%;
+}
+
+/* Dropdown animation container */
+.sidebar-dropdown {
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.25s ease;
+  max-height: 0;
+  opacity: 0;
+}
+
+/* When open */
+.sidebar-dropdown.open {
+  max-height: 500px;
+  /* enough space for children */
+  opacity: 1;
+}
+
+/* Submenu items */
+.sidebar-submenu .sidebar-link {
+  font-size: 14px;
+  padding: 8px 15px;
+  margin-bottom: 4px;
 }
